@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spotify Search (ES6 Edition)</title>
+
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="page-container">
+
+        <!-- Spotify logo. -->
+        <img width="50" height="50" src="https://lh3.googleusercontent.com/UrY7BAZ-XfXGpfkeWg0zCCeo-7ras4DCoRalC_WXXWTK9q5b0Iw7B0YQMsVxZaNB7DM=w300">
+
+        <div id="search-container">
+        
+            <!-- Where the user selects what to search for. -->
+            <select id="search-type">
+                <option value="artist">Artist</option>
+                <option value="track">Track</option>
+            </select>
+
+            <!-- Where the user enters search text. -->
+            <input id="search-text" type="search" size="35">
+
+            <!-- Button to start a search. -->
+            <button id="search-start">Search</button>
+        </div>
+
+        <div id="search-results-container">
+
+            <!-- This div will contain 0 or more search results. -->
+            <div id="search-results">
+                <!-- 
+                    NOTE: The HTML below is just to illustrate what the HTML for a search result looks like. 
+                    You will be adding this HTML dynamically using jQuery in app.js.
+                -->
+                <!-- 
+                <div class="search-result">
+                    <div class="search-result-info">
+                        <p>Bruce Springsteen</p>
+                        <a href="spotify:artist:3eqjTLE0HfPfh78zjh6TqT">Open in Spotify</a>
+                    </div>
+                    <img src="https://i.scdn.co/image/44950144319b9ba8e6bc82cd6d20d785128d52aa">
+                </div> 
+                -->
+            </div>
+        </div>
+    </div>
+
+    <script src="build/bundle.js"></script>
+</body>
+</html>
